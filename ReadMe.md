@@ -28,7 +28,7 @@ The code is written in python. The dependencies are:
 
 All code should be run from the `code` folder. 
 
-The training of the model can be done by running the following command:     
+Training of a model can be done by running the following command:     
 `python train.py [model_name] [nli_path] [encoder_path]`      
 Here the `[model_name]` is the name of the selected model: `base`, `lstm`, `bilstm` or `bilstmpool`.    
 `[nli_path]` is the path to which the NLI model checkpoint should be stored and `[encoder]` is the path where the encoder should be stored. The `base` model does not train an encoder and in this case the `encoder_path` should be `None`.
