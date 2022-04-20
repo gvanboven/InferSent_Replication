@@ -37,8 +37,8 @@ A model can be evaluated on the NLI task by running:
 `python eval.py [model_name] [nli_path] [encoder_path]`    
 Which takes all the same parameters as training, only now the paths should refer to the checkpoints of a trained model. Again `[encoder_path]`  should be `None` for the `base` model.
 
-To evaluate a model on SentEval run: 
-`python senteval_eval.py [model_name] [nli_path] [output_path]`
+To evaluate a model on SentEval run:       
+`python senteval_eval.py [model_name] [nli_path] [output_path]`      
 Where `[output_path]` should be a json file to which the evaluation results will be stored.
 
 ## Repo structure
@@ -48,6 +48,6 @@ Where `[output_path]` should be a json file to which the evaluation results will
 
 
 ## Demo 
-
+The file `code/error_analysis` contains a demonstration on how to make NLI predictions with a trained model for a hypothesis - premise pair. Continuing, this file contains an error analysis for the NLI task, and an analysis of the information that is represented in the sentence embeddings that are formed by the different models.
 
 ## References
