@@ -27,8 +27,11 @@ The code is written in python. The dependencies are:
 ## Training and evaluation
 
 ## Repo structure
-For more info on the code, see the ReadMe in the code folder
+* The folder `code` contains all code used to train and evaluate models. This folder also contains a notebook `error_analysis.ipnb` that contains a demo of the models and an error analysis (see below). 
+* The folder `eval_results` contains my evaluation results for all four models, both on the NLI task and on the SentEval tasks.
+* `pretrained` should contain the pretrained GloVe model (`glove.840B.300d.txt`), but this was currently taken out. In order for the code to run, this model should be placed in this folder
 
-# Demo 
 
-# References
+## Demo 
+
+## References
