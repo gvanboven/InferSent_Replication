@@ -41,7 +41,7 @@ To evaluate a model on SentEval run:
 `python senteval_eval.py [model_name] [nli_path] [output_path]`      
 Where `[output_path]` should be a json file to which the evaluation results will be stored.
 
-## Repo structure
+## Repository structure
 * The folder `code` contains all code used to train and evaluate models. This folder also contains a notebook `error_analysis.ipnb` that contains a demo of the models and an error analysis (see below). 
 * The folder `eval_results` contains my evaluation results for all four models, both on the NLI task and on the SentEval tasks.
 * `pretrained` should contain the pretrained GloVe model (`glove.840B.300d.txt`), but this was currently taken out. In order for the code to run, this model should be placed in this folder
@@ -51,3 +51,12 @@ Where `[output_path]` should be a json file to which the evaluation results will
 The file `code/error_analysis` contains a demonstration on how to make NLI predictions with a trained model for a hypothesis - premise pair. Continuing, this file contains an error analysis for the NLI task, and an analysis of the information that is represented in the sentence embeddings that are formed by the different models.
 
 ## References
+
+S. R. Bowman, G. Angeli, C. Potts, and C. D. Manning. A large annotated corpus for learning
+natural language inference. _arXiv preprint arXiv:1508.05326_, 2015.
+
+A. Conneau, D. Kiela, H. Schwenk, L. Barrault, and A. Bordes. Supervised learning of univer-
+sal sentence representations from natural language inference data. In _Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing_, pages 670–680, Copenhagen,
+Denmark, September 2017. Association for Computational Linguistics.
+
+J. Pennington, R. Socher, & C. D. Manning. Glove: Global vectors for word representation. In _Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)_ pages 1532-1543, October 2014.
