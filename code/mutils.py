@@ -252,3 +252,23 @@ def predict(model, embedding_model, nli, s1, s2, batch_size=1):
         batch_pred = batch_output.data.max(1)[1][0].item()
         return batch_pred
 
+def encode(model, embedding_model, sents, device, encoder):
+    '''
+    preprocess and encode a list of sentences (string)
+    the embedding model and the encoder should already be loaded
+    '''
+    #for the base model, we take the mean of the embeddings
+    if model == 'base':
+        take_mean = True
+    else:
+        take_mean = False
+    #preprocess and batch sentences
+    sents = preprocess_sentence_data(sents)
+    embeddings = get_batch(embedding_model, sents, device, take_mean)
+
+    if model != 'base':
+        padded_embeddings, embedding_lengths = pad_singlebatch(embeddings)
+        embeddings = encoder(padded_embeddings, embedding_lengths)
+    else:
+        embeddings = torch.stack(embeddings)
+    return embeddings
