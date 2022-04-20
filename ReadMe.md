@@ -31,7 +31,15 @@ All code should be run from the `code` folder.
 Training of a model can be done by running the following command:     
 `python train.py [model_name] [nli_path] [encoder_path]`      
 Here the `[model_name]` is the name of the selected model: `base`, `lstm`, `bilstm` or `bilstmpool`.    
-`[nli_path]` is the path to which the NLI model checkpoint should be stored and `[encoder]` is the path where the encoder should be stored. The `base` model does not train an encoder and in this case the `encoder_path` should be `None`.
+`[nli_path]` is the path to which the NLI model checkpoint should be stored and `[encoder_path]` is the path where the encoder should be stored. The `base` model does not train an encoder and in this case the `encoder_path` should be `None`.
+
+A model can be evaluated on the NLI task by running:    
+`python eval.py [model_name] [nli_path] [encoder_path]`    
+Which takes all the same parameters as training, only now the paths should refer to the checkpoints of a trained model. Again `[encoder_path]`  should be `None` for the `base` model.
+
+To evaluate a model on SentEval run: 
+`python senteval_eval.py [model_name] [nli_path] [output_path]`
+Where `[output_path]` should be a json file to which the evaluation results will be stored.
 
 ## Repo structure
 * The folder `code` contains all code used to train and evaluate models. This folder also contains a notebook `error_analysis.ipnb` that contains a demo of the models and an error analysis (see below). 
@@ -40,5 +48,6 @@ Here the `[model_name]` is the name of the selected model: `base`, `lstm`, `bils
 
 
 ## Demo 
+
 
 ## References
