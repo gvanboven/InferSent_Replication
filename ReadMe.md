@@ -4,6 +4,7 @@ In this folder I do a partial replication of the InferSent embeddings by Conneau
 * `lstm` takes a unidirectional LSTM as its sentence encoder.
 * `bilstm` takes a bidirectional LSTM as its sentence encoder.
 * `bilstmpool` has a bidirectional LSTM that applies max pooling over the hidden states of the tokens.       
+
 After extracting the sentence embeddings, all models concatenate the embedding of the hypothesis and the premise following Conneau et al., process the embedding through a small MLP and finally make the prediction in a 3-way softmax (entailment, neutral or contradiciton).
 
 The models are evaluated both on the NLI task and on a variety of SentEval tasks. I replicate the finding by Conneau et al. that the best results are obtained for the `bilstmpool` model. 
