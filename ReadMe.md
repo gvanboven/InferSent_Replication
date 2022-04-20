@@ -26,6 +26,13 @@ The code is written in python. The dependencies are:
 
 ## Training and evaluation
 
+All code should be run from the `code` folder. 
+
+The training of the model can be done by running the following command:     
+`python train.py [model_name] [nli_path] [encoder_path]`      
+Here the `[model_name]` is the name of the selected model: `base`, `lstm`, `bilstm` or `bilstmpool`.    
+`[nli_path]` is the path to which the NLI model checkpoint should be stored and `[encoder]` is the path where the encoder should be stored. The `base` model does not train an encoder and in this case the `encoder_path` should be `None`.
+
 ## Repo structure
 * The folder `code` contains all code used to train and evaluate models. This folder also contains a notebook `error_analysis.ipnb` that contains a demo of the models and an error analysis (see below). 
 * The folder `eval_results` contains my evaluation results for all four models, both on the NLI task and on the SentEval tasks.
