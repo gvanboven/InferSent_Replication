@@ -1,0 +1,26 @@
+{
+    "base": {
+        "macro": 77.75,
+        "micro": 79.16,
+        "dev_acc": 65.57,
+        "test_acc": 65.25
+    },
+    "lstm": {
+        "macro": 76.25,
+        "micro": 76.98,
+        "dev_acc": 79.45,
+        "test_acc": 78.81
+    },
+    "bilstm": {
+        "macro": 78.88,
+        "micro": 79.63,
+        "dev_acc": 78.51,
+        "test_acc": 78.55
+    },
+    "bilstmpool": {
+        "macro": 80.5,
+        "micro": 81.37,
+        "dev_acc": 82.98,
+        "test_acc": 82.79
+    }
+}

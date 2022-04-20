@@ -1,0 +1,1 @@
+In this folder, the GloVe embedding model `glove.840B.300d.txt` should be placed.

@@ -1,0 +1,42 @@
+{
+    "base": {
+        "MR": 74.88,
+        "CR": 78.46,
+        "SUBJ": 90.11,
+        "MPQA": 84.85,
+        "SST2": 78.21,
+        "TREC": 67.31,
+        "SICKEntailment": 80.8,
+        "MRPC": 71.2
+    },
+    "lstm": {
+        "MR": 72.13,
+        "CR": 77.73,
+        "SUBJ": 85.96,
+        "MPQA": 84.84,
+        "SST2": 76.26,
+        "TREC": 61.45,
+        "SICKEntailment": 82.2,
+        "MRPC": 73.11
+    },
+    "bilstm": {
+        "MR": 72.4,
+        "CR": 79.26,
+        "SUBJ": 89.52,
+        "MPQA": 85.06,
+        "SST2": 78.67,
+        "TREC": 73.06,
+        "SICKEntailment": 83.4,
+        "MRPC": 72.55
+    },
+    "bilstmpool": {
+        "MR": 75.76,
+        "CR": 81.78,
+        "SUBJ": 91.57,
+        "MPQA": 85.64,
+        "SST2": 79.93,
+        "TREC": 75.26,
+        "SICKEntailment": 84.4,
+        "MRPC": 74.31
+    }
+}
